@@ -3,7 +3,7 @@ var rect = {
     area: (x, y) => (x*y)
 };
 
-function solveRect(l, b) {
+solveRect = (l, b) => {
     console.log(`Solving for rectangle with l = ${l} and b = ${b}`)
 
     if (l <= 0 || b <= 0) {
