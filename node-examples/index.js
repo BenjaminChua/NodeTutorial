@@ -1,5 +1,4 @@
 var rect = require('./rectangle');
-const rectangle = require('./rectangle');
 
 solveRect = (l, b) => {
     console.log(`Solving for rectangle with l = ${l} and b = ${b}`)
