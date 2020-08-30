@@ -113,3 +113,22 @@
             console.log(`Server running at http://${hostname}:${port}`)
         });
         ```
+6. Express.js REST API and Express Router
+    - index.js
+        ```
+        app.use(bodyParser.json());
+        
+        app.get('/dishes', (req, res, next) => {
+            res.end('Will send all the dishes to you!');
+        });
+
+        app.post('/dishes/:dishID', (req, res, next) => {
+            res.statusCode = 403;
+            res.end(`POST operation not supported on /dishes/${req.params.dishID}`);
+        });
+
+        app.put('/dishes/:dishID', (req, res, next) => {
+            res.write(`Updating the dish: ${req.params.dishID} \n`);
+            res.end(`Will update the dish: ${req.body.name} with details: ${req.body.description}`);
+        });
+        ```
