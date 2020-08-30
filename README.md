@@ -135,7 +135,9 @@
 7. Express.js REST API, Body Parser & Express Router
     - index.js
         ```
-        
+        const dishRouter = require('./routes/dishRouter');
+
+        app.use('/dishes', dishRouter);
         ```
     - dishRouter.js
         ```
