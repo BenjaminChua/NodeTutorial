@@ -93,9 +93,12 @@
         ```
 4. Using postman in the development of APIs
 5. Express.js as web framework and morgan for logging
-    - index.js
+    - index.js (static pages)
         ```
         const app = express();
+
+        app.use(morgan('dev'));
+        app.use(express.static(__dirname + '/public'));
 
         app.use((req, res, next) => {
             console.log(req.headers);
