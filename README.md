@@ -45,13 +45,6 @@
 3. Build a simple HTTP Server
     - index.js (with index.html)
         ```
-        const http = require('http');
-        const fs = require('fs');
-        const path = require('path');
-
-        const hostname = 'localhost';
-        const port = 3000;
-
         const server = http.createServer((req, res) => {
         
             console.log(`Request for ${req.url} by method ${req.method}`);
@@ -99,3 +92,21 @@
         })
         ```
 4. Using postman in the development of APIs
+5. Express.js as web framework and morgan for logging
+    - index.js
+        ```
+        const app = express();
+
+        app.use((req, res, next) => {
+            console.log(req.headers);
+            res.statusCode = 200;
+            res.setHeader('Content-Type', 'text/html');
+            res.end('<html><body><h1>This is an Express server</h1></body></html>');
+        });
+
+        const server = http.createServer(app);
+
+        server.listen(port, hostname, () => {
+            console.log(`Server running at http://${hostname}:${port}`)
+        });
+        ```
