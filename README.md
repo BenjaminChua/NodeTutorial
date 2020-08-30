@@ -113,11 +113,11 @@
             console.log(`Server running at http://${hostname}:${port}`)
         });
         ```
-6. Express.js REST API and Express Router
+6. Express.js REST API and Body Parser
     - index.js
         ```
         app.use(bodyParser.json());
-        
+
         app.get('/dishes', (req, res, next) => {
             res.end('Will send all the dishes to you!');
         });
