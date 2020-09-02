@@ -157,3 +157,43 @@
         module.exports = dishRouter;
         ```
 8. Express generator REST API
+    ```
+    sudo npm install -g express-generator
+    ```
+    ```
+    express conFusionServer
+    ```
+9. MongoDB
+    - Create database
+        ```
+        mkdir data
+        ```
+    - Init database
+        ```
+        mongod --dbpath=data --bind_ip 127.0.0.1
+        ```
+    - Access Mongo server in default port 27017
+        ```
+        mongo
+        ```
+        - Create/Connect to new DB conFusion
+            ```
+            use conFusion
+            ```
+        - Help
+            ```
+            db.help()
+            ```
+        - Insert record into dishes collection in conFusion DB
+            ```
+            db.dishes.insert({"name": "Uthappizza", "description": "Test"});
+            ```
+        - Pretty print all documents in dishes collection
+            ```
+            db.dishes.find().pretty()
+            ```
+        - Get ISO datetime from ObjectId
+            ```
+            var id = new ObjectId()
+            id.getTimestamp()
+            ```
