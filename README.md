@@ -206,3 +206,12 @@
         ```
         npm install --save mongodb assert
         ```
+11. Mongoose
+    - Init database
+        ```
+        mongod --dbpath=data --bind_ip 127.0.0.1
+        ```
+    - Install mongoose
+        ```
+        npm install --save mongoose
+        ```
