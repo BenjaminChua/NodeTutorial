@@ -215,3 +215,4 @@
         ```
         npm install --save mongoose
         ```
+12. Using cookies for Basic Auth
