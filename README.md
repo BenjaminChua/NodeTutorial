@@ -215,8 +215,12 @@
         ```
         npm install --save mongoose
         ```
-12. Using cookies for Basic Auth
-13. Using passport, passport-local and passport-local-mongoose for user auth
+12. Using cookies and express sessions for Basic Auth
+13. Using local authentication: passport, passport-local and passport-local-mongoose for user auth
     ```
     npm install --save passport passport-local passport-local-mongoose
+    ```
+14. Token based authentication without sessiions: jsonwebtoken and passport-jwt
+    ```
+    npm install --save jsonwebtoken passport-jwt
     ```
