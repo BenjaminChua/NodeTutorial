@@ -216,3 +216,7 @@
         npm install --save mongoose
         ```
 12. Using cookies for Basic Auth
+13. Using passport, passport-local and passport-local-mongoose for user auth
+    ```
+    npm install --save passport passport-local passport-local-mongoose
+    ```
