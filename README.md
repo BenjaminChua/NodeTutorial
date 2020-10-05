@@ -224,3 +224,4 @@
     ```
     npm install --save jsonwebtoken passport-jwt
     ```
+15. Mongoose population for auto population of user info for each comment in dishes
