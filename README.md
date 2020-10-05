@@ -225,3 +225,13 @@
     npm install --save jsonwebtoken passport-jwt
     ```
 15. Mongoose population for auto population of user info for each comment in dishes
+16. Changing a user to admin directly from the database
+    ```
+    mongo
+    ```
+    ```
+    use conFusion
+    ```
+    ```
+    db.users.update({"username": "admin"}, {$set: {"admin": true}})
+    ```
