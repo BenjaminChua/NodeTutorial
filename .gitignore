@@ -4,3 +4,7 @@
 *.csr
 *.pem
 *.key
+*.png
+*.jpg
+*.jpeg
+*.gif

@@ -241,3 +241,7 @@
     openssl req -new -key private.key -out cert.csr
     openssl x509 -req -in cert.csr -signkey private.key -out certificate.pem
     ```
+18. Using Multer for uploading of files
+    ```
+    npm install --save multer
+    ```
