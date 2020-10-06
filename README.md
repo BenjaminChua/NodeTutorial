@@ -245,3 +245,8 @@
     ```
     npm install --save multer
     ```
+19. Using Cross-Origin Resource Sharing (CORS) for CORS requests
+    _Accessing a resource from a different domain, protocol or port_
+    ```
+    npm install --save cors
+    ```
