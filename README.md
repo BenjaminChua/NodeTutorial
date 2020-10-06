@@ -250,3 +250,7 @@
     ```
     npm install --save cors
     ```
+20. Using facebook OAuth 2.0
+    ```
+    npm install --save passport-facebook-token
+    ```
