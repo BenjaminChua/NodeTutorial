@@ -235,3 +235,6 @@
     ```
     db.users.update({"username": "admin"}, {$set: {"admin": true}})
     ```
+17. Generate a self-signed ssl cert and private key for local development
+    ```
+    ```
