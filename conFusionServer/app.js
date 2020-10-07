@@ -59,7 +59,7 @@ app.use('/dishes', dishRouter);
 app.use('/promotions', promoRouter);
 app.use('/leaders', leaderRouter);
 app.use('/imageUpload', uploadRouter);
-app.use('/favourites', favouriteRouter);
+app.use('/favorites', favouriteRouter);
 app.use('/comments', commentRouter);
 
 // catch 404 and forward to error handler
